@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Form Biodata</legend>
+        <table>
+            <tr>
+                <td width="120">NIM</td>
+                <td><input type="text" placeholder="Masukkan NIM"></td>
+            </tr>
+            <tr>
+                <td>NAMA</td>
+                <td><input type="text" placeholder="Masukkan NAMA"></td>
+            </tr>
+            <tr>
+                <td>JENIS KELAMIN</td>
+                <td>
+                    <input type="radio" name="jk" value="l" checked> laki-laki
+                    <input type="radio" name="jk" value="p"> perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>JURUSAN</td>
+                <td>
+                    <select>
+                        <option value="">Pilih Jurusan</option>
+                        <option value="D3SI">D3 SI</option>
+                        <option value="S1RPL">S1 RPL</option>
+                        <option value="S1MANAJEMEN">S1 MANAJEMEN</option>
+                        <option value="S1AKUNTANSI">S1 AKUNTANSI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>HOBBY</td>
+                <td>
+                    <input type="checkbox" name="chkhobby[]" value="komputer"> Komputer
+                    <input type="checkbox" name="chkhobby[]" value="musik"> Musik
+                    <input type="checkbox" name="chkhobby[]" value="olahraga"> Olahraga
+                    <input type="checkbox" name="chkhobby[]" value="travelling"> Travelling
+                </td>
+            </tr>
+            <tr>
+                <td>CATATAN</td>
+                <td>
+                    <textarea required name="catatan" id="catatan" cols="50" rows="5" placeholder="Masukan Catatan"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>FOTO</td>
+                <td>
+                    <input type="file" name="foto" accept="image/*">
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL</td>
+                <td>
+                    <input Required type="email" name ="email" id="email" placeholder="Masukkan Email">
+                </td>
+            </tr>
+            <tr>
+                <td>SANDI LOGIN</td>
+                <td>
+                    <input Required type="password" name ="sandi" id="sandi" placeholder="Masukkan Sandi">
+                </td>
+            </tr>
+            <tr>
+                <td>ULANGI SANDI LOGIN</td>
+                <td>
+                    <input Required type="password" name ="ulang" id="ulang" placeholder="Ulangi Sandi">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="Simpan">
+                    <input type="reset" name="batal" value="Batal">
+                    <button type="button" onclick="alert('Isi data dengan lengkap')">Peringatan</button>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>
