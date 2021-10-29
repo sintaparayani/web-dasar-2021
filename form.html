@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <form action="" method ="post">
+            <fieldset>
+            <legend>Form Biodata</legend>
+            
+            <div class="mb-3">
+                <label for="nim">NIM :</label>
+                <input Required type="text" class="form-control" name="nim" id="nim" placeholder="Masukan nim anda">
+            </div>
+        
+            <div class="b-3">
+                <label for="nama">NAMA :</label>
+                <input Required type="text" class="form-control" name ="nama" id="nama">
+            </div>
+        
+            <div class="b-3">
+                <label for="jk">JENIS KELAMIN :</label>
+                <input type="radio" class="form-control" name="jk" id='jk' value="L" checked> Laki-Laki
+                <input type="radio" class="form-control" name="jk" id='jk' value="P" > Perempuan
+            </div>
+            
+            <div class="b-3">
+                <label for ="Jurusan">JURUSAN :</label>
+                <select name="Jurusan"> id="Jurusan">
+                    <option value="">Pilih Jurusan</option>
+                    <option value="D3SI">D3 SI</option>
+                    <option value="S1RPL">S1 RPL</option>
+                    <option value="S1MANAJEMEN">S1 MANAJEMEN</option>
+                    <option value="S1AKUNTANSI">S1 AKUNTANSI</option>
+                </select>
+            </div>
+
+            <div class="b-3">
+                <label for="hobby">HOBBY :</label>
+                    <input type="checkbox" class="form-control" name="chkhobby[]" value="komputer"> Komputer
+                    <input type="checkbox" class="form-control" name="chkhobby[]" value="musik"> Musik
+                    <input type="checkbox" class="form-control" name="chkhobby[]" value="olahraga"> Olahraga
+                    <input type="checkbox" class="form-control" name="chkhobby[]" value="travelling"> Travelling
+            </div>
+
+            <div class="b-3">
+                <label for ="catatan">CATATAN :</label> 
+                <textarea required name="catatan" class="form-control" id="catatan" cols="50" rows="5" placeholder="Masukan Catatan"></textarea>
+            </div>
+
+            <div class="b-3">
+                <label for="foto">FOTO :</label>
+                <input type="file" class="form-control" name="foto" accept="image/*">
+            </div>
+            
+            <div class="b-3">
+                <label for="email">EMAIL :</label>
+                <input Required type="email" class="form-control" name ="email" id="email">
+            </div>
+
+            <div class="b-3">
+                <label for="sandi">SANDI LOGIN :</label>
+                <input Required type="password" class="form-control" name ="sandi" id="sandi">
+            </div>
+
+            <div class="b-3">
+                <label for="ulang">ULANGI SANDI LOGIN :</label>
+                <input Required type="password" class="form-control" name ="ulang" id="ulang">
+            </div>
+
+            <div class="b-3">
+                <input type="submit" class="form-control" name="submit" value="Simpan">
+                <input type="reset" class="form-control" name="batal" value="Batal">
+                <button type="button" onclick="alert('Isi data dengan lengkap')">Peringatan</button>
+            </div>
+
+    </fieldset>
+    </form>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
